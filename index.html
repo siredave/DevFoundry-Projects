@@ -7,15 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="w-full min-h-screen">
+  <body class="w-full min-h-screen overflow-x-hidden ">
   <!-- Header Section -->
   <header>
     <div
-      class="w-[1440px] h-[640px] bg-[url('images/Rectangle%202.png')] bg-cover bg-center flex flex-col"
+      class="max-w-full h-[640px] bg-[url('images/Rectangle%202.png')] bg-cover bg-center flex flex-col"
     >
-      <div class="mt-[50px]">
+      <div class="max-w-full w-full mt-[50px] ml-[30px] mr-[30px]">
         <nav
-          class="w-[1312px] h-[80px] pt-3 pr-[24px] pb-3 pl-[24px] justify-between flex items-center bg-white bg-opacity-55 backdrop-blur-md ml-[64px] rounded-[20px]"
+          class="w-[1332px] h-[80px] pt-3 pr-[24px] pb-3 pl-[24px] justify-between flex items-center bg-white bg-opacity-55 backdrop-blur-md ml-[64px] rounded-[20px]"
         >
           <h2
             class="w-[170px] h-[40px] font-[Gilroy-Bold] text-[32px] leading-[37.5px] text-[#432361]"
@@ -46,7 +46,7 @@
           </div>
         </nav>
       </div>
-      <div class="flex items-center justify-center mt-[80px] w-[1312px]">
+      <div class="max-w-full w-[1332px] flex items-center justify-center mt-[80px] ml-[40px] mr-[30px]">
         <div class="w-[1440px] h-[640px]">
           <h1
             class="w-[531px] h-[160px] text-[32px] leading-[37.5px] font-[Gilroy-Bold] text-[#FFFFFF] absolute top-[428px] left-[64px]"
@@ -84,7 +84,7 @@
 
     <!-- Trending Events Section -->
     <section class="mt-8">
-      <div class="max-w-[1440px] w-full mx-auto flex flex-col items-center">
+      <div class="flex flex-col items-center w-full max-w-full mx-auto">
         <div class="w-[90%] flex justify-between items-center mb-6">
           <h3 class="text-[32px] font-[Gilroy-Semibold] text-black">Trending events</h3>
           <p class="text-[16px] font-[Gilroy-Semibold] cursor-pointer hover:underline">
@@ -95,15 +95,15 @@
          <!-- Product Cards Section -->
          <div
          id="product-cards"
-         class="grid grid-cols-1 gap-8 p-8 sm:grid-cols-2 md:grid-cols-3"
+         class="grid grid-cols-1 gap-8 p-8 sm:grid-cols-2 md:grid-cols-3 ml-[20px] mr-[20px]"
        ></div>
       </div>
     </section>
 
     <section>
-      <div class="w-[1440px] h-[754px] bg-white flex items-center justify-center">
+      <div class="max-w-full w-full h-[754px] bg-white flex items-center justify-center">
         <!-- Text and Button Section -->
-        <div class="flex flex-col items-center justify-center gap-[20px]">
+        <div class="flex flex-col items-center justify-center gap-[60px] ">
           <div class="w-[393px] h-[78px] mt-[158px] ml-[64px]">
             <p class="font-[Gilroy-Semibold] text-[32px] leading-[37.5px]">
               Discover a World of Events Tailored Just for You
@@ -161,7 +161,7 @@
 <footer class="bg-[#432361] text-white">
   <div class="container flex items-start justify-between w-[1440px] h-[343px]">
     <!-- Logo and Description -->
-    <div class="flex flex-col w-[340px] h-[94px] ml-[64px] mt-[56px]">
+    <div class="flex flex-col w-[340px] h-[94px] ml-[74px] mt-[56px]">
       <h2 class="mb-3 text-[32px] leading-[37.5px] font-[Gilroy-Bold] w-[170px] h-[40px]">rendezvous</h2>
       <p class="text-[16px] leading-[18.75px] font-[Gilroy-Regular] w-[332px] h-[38px]">
         Your Personal Event Sherpa: Curating Awesome, One Click at a Time.
