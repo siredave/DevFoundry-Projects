@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendezvous</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="w-full min-h-screen">
+  <!-- Header Section -->
+  <header>
+    <div
+      class="w-[1440px] h-[640px] bg-[url('images/Rectangle%202.png')] bg-cover bg-center flex flex-col"
+    >
+      <div class="mt-[50px]">
+        <nav
+          class="w-[1312px] h-[80px] pt-3 pr-[24px] pb-3 pl-[24px] justify-between flex items-center bg-white bg-opacity-55 backdrop-blur-md ml-[64px] rounded-[20px]"
+        >
+          <h2
+            class="w-[170px] h-[40px] font-[Gilroy-Bold] text-[32px] leading-[37.5px] text-[#432361]"
+          >
+            rendezvous
+          </h2>
+          <ul
+            class="text-[#432361] w-[356px] h-[552] p-2 gap-[14px] font-[Gilroy-Bold] text-[16px] flex items-center justify-center"
+          >
+            <li><a href="#discover" class="hover:underline">Discover</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#faqs" class="hover:underline">FAQs</a></li>
+            <li><a href="#contact" class="hover:underline">Contact Us</a></li>
+          </ul>
+          <div
+            class="flex items-center justify-center h-[44px] w-[205px] gap-[24px]"
+          >
+            <h2
+              class="text-[#432361] w-[45px] h-[20px] text-[16px] font-[Gilroy-Bold] leading-[18.75px]"
+            >
+              <a href="#login" class="hover:underline">Login</a>
+            </h2>
+            <button
+              class="w-[120px] h-[44px] px-6 py-2 bg-[#432361] text-white font-semibold rounded-lg font-[Gilroy-Semibold]"
+            >
+              Sign Up
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="flex items-center justify-center mt-[80px] w-[1312px]">
+        <div class="w-[1440px] h-[640px]">
+          <h1
+            class="w-[531px] h-[160px] text-[32px] leading-[37.5px] font-[Gilroy-Bold] text-[#FFFFFF] absolute top-[428px] left-[64px]"
+          >
+            Ready to Rock? Discover the Hottest Events Here - Your Calendar's
+            New Best Friend!
+          </h1>
+        </div>
+        <div
+          class="flex items-center justify-between w-[660px] h-[100px] rounded-[22px] pr-6 pl-6 bg-white ml-[716px] gap-2"
+        >
+          <input
+            type="text"
+            placeholder="Search for an event"
+            class="w-[280px] h-[51px] font-[Gilroy-Regular] text-[16px] leading-[18.75px]"
+          />
+          <select
+            class="w-[160px] h-[35px] rounded-sm justify-between pt-2 pr-4 pb-2 pl-4"
+          >
+            <option value="Categories">Categories</option>
+          </select>
+          <button
+            class="w-[120px] h-[44px] rounded-[10px] bg-[#783ead] gap-2 pt-3 pr-6 pb-3 pl-6"
+          >
+            <p
+              class="w-[52px] h-[20px] text-white font-[Gilroy-Semibold] leading-[18.75px] text-base"
+            >
+              Search
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Trending Events Section -->
+    <section class="mt-8">
+      <div class="max-w-[1440px] w-full mx-auto flex flex-col items-center">
+        <div class="w-[90%] flex justify-between items-center mb-6">
+          <h3 class="text-[32px] font-[Gilroy-Semibold] text-black">Trending events</h3>
+          <p class="text-[16px] font-[Gilroy-Semibold] cursor-pointer hover:underline">
+            view all trending events ↗
+          </p>
+        </div>
+         <!-- Product Cards Section -->
+         <div
+         id="product-cards"
+         class="grid grid-cols-1 gap-8 p-8 sm:grid-cols-2 md:grid-cols-3"
+       ></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-[1440px] h-[754px] bg-white flex items-center justify-center">
+        <!-- Text and Button Section -->
+        <div class="flex flex-col items-center justify-center gap-[20px]">
+          <div class="w-[393px] h-[78px] mt-[158px] ml-[64px]">
+            <p class="font-[Gilroy-Semibold] text-[32px] leading-[37.5px]">
+              Discover a World of Events Tailored Just for You
+            </p>
+          </div>
+          <button
+            class="w-[120px] h-[44px] rounded-[10px] bg-[#783ead] flex items-center justify-center"
+          >
+            <p class="text-white font-[Gilroy-Semibold] leading-[18.75px] text-base">
+              View all events
+            </p>
+          </button>
+        </div>
+    
+        <!-- Events Section -->
+        <div class="flex flex-wrap w-full md:w-[850px] gap-4 items-center justify-center">
+          <!-- First Event -->
+          <div
+            class="w-[48%] bg-[url('images/Rectangle%203%20(2).png')]
+            bg-cover bg-center h-[240px] rounded-[10px] flex items-center justify-center"
+          >
+            <p
+              class="font-[Gilroy-Semibold] text-white text-[24px] leading-[28.13px]"
+            >
+              Online Events
+            </p>
+          </div>
+    
+          <!-- Second Event -->
+          <div
+            class="w-[48%] bg-[url('images/Rectangle%203.png')] bg-cover bg-center h-[240px] rounded-[10px] flex items-center justify-center"
+          >
+            <p
+              class="font-[Gilroy-Semibold] text-white text-[24px] leading-[28.13px]"
+            >
+              Physical Events
+            </p>
+          </div>
+    
+          <!-- Third Event -->
+          <div
+            class="w-[421px] bg-[url('images/Rectangle%203%20(1).png')] bg-cover bg-center h-[240px] rounded-[10px] flex items-center justify-center"
+          >
+            <p
+              class="font-[Gilroy-Semibold] text-white text-[24px] leading-[28.13px]"
+            >
+              Hybrid Events
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="bg-[#432361] text-white">
+  <div class="container flex flex-wrap items-start justify-between px-8 py-12 mx-auto">
+    <!-- Logo and Description -->
+    <div class="flex flex-col w-full mb-8 md:w-1/4 md:mb-0">
+      <h2 class="mb-3 text-2xl font-bold">rendezvous</h2>
+      <p class="text-sm">
+        Your Personal Event Sherpa: Curating Awesome, One Click at a Time.
+      </p>
+    </div>
+    
+    <!-- Feature Section -->
+    <div class="flex flex-col w-full mb-8 md:w-1/5 md:mb-0">
+      <h3 class="mb-4 text-lg font-bold">Feature</h3>
+      <ul class="space-y-3">
+        <li><a href="#events-discovery" class="hover:underline">Events Discovery</a></li>
+        <li><a href="#ticketing" class="hover:underline">Ticketing</a></li>
+      </ul>
+    </div>
+    <!-- Company Section -->
+    <div class="flex flex-col w-full mb-8 md:w-1/5 md:mb-0">
+      <h3 class="mb-4 text-lg font-bold">Company</h3>
+      <ul class="space-y-3">
+        <li><a href="#about-us" class="hover:underline">About Us</a></li>
+        <li><a href="#faqs" class="hover:underline">FAQs</a></li>
+        <li><a href="#careers" class="hover:underline">Careers</a></li>
+        <li><a href="#support" class="hover:underline">Support</a></li>
+      </ul>
+    </div>
+    <!-- Contact Us Section -->
+    <div class="flex flex-col w-full md:w-1/4">
+      <h3 class="mb-4 text-lg font-bold">Contact Us</h3>
+      <ul class="space-y-3">
+        <li>siredave1@gmail.com</li>
+        <li>+2348164707958</li>
+        <li>
+          Race Course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos Island 102273, Lagos.
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script src="./js/index.js" defer type="module"></script>
+  </body>
+</html>
