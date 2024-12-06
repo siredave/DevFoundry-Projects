@@ -2,9 +2,6 @@ import { Product,ProductService } from "./product.js";
 
 const productService = new ProductService();
 
-// Reference to the container
-const productCardsContainer = document.getElementById("product-cards")
-
 // Function to create and append product cards
 function displayProducts(products) {
   const productCardsContainer = document.getElementById("product-cards");
@@ -29,7 +26,7 @@ function displayProducts(products) {
 
     // Add price
     const price = document.createElement("p");
-    price.className = "mb-4 text-lg text-green-600 font-[Gilroy-SemiBold]";
+    price.className = "mb-4 text-lg  font-[Gilroy-SemiBold]";
     price.textContent = `$${product.price}`;
 
       // Add description
