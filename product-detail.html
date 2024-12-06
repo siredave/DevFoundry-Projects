@@ -8,99 +8,88 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="w-[1440px] h-[1488px] bg-white">
-     <!-- Navbar -->
-   <nav
-   class="w-[1312px] h-[80px] pt-3 pr-[24px] pb-3 pl-[24px] justify-between flex items-center bg-white  ml-[64px] rounded-[20px]"
- >
-   <h2
-     class="w-[170px] h-[40px] font-[Gilroy-Bold] text-[32px] leading-[37.5px] text-[#432361]"
-   >
-     rendezvous
-   </h2>
-   <ul
-     class="text-[#432361] w-[356px] h-[552] p-2 gap-[14px] font-[Gilroy-Bold] text-[16px] flex items-center justify-center"
-   >
-     <li><a href="#discover" class="hover:underline">Discover</a></li>
-     <li><a href="#about" class="hover:underline">About</a></li>
-     <li><a href="#faqs" class="hover:underline">FAQs</a></li>
-     <li><a href="#contact" class="hover:underline">Contact Us</a></li>
-   </ul>
-   <div
-     class="flex items-center justify-center h-[44px] w-[205px] gap-[24px]"
-   >
-     <h2
-       class="text-[#432361] w-[45px] h-[20px] text-[16px] font-[Gilroy-Bold] leading-[18.75px]"
-     >
-       <a href="#login" class="hover:underline">Login</a>
-     </h2>
-     <button
-       class="w-[120px] h-[44px] px-6 py-2 bg-[#432361] text-white font-semibold rounded-lg font-[Gilroy-Semibold]"
-     >
-       Sign Up
-     </button>
-   </div>
- </nav>
-
-<!-- Product details div -->
-  <div id="product-detail" class="container pt-10 pb-20 mx-auto"></div>
-
-  </div>
+<body class="w-[1440px] h-screen">
+  <div class="mx-auto bg-white ">
+    <!-- Navbar -->
+    <nav
+      class="w-[1312px] h-[80px] flex items-center justify-between bg-white mx-auto mt-6 px-6 rounded-[20px] shadow-md"
+    >
+      <h2
+        class="text-[#432361] text-[32px] font-[Gilroy-Bold]"
+      >
+        rendezvous
+      </h2>
+      <ul
+        class="text-[#432361] flex gap-6 font-[Gilroy-Bold] text-[16px]"
+      >
+        <li><a href="#discover" class="hover:underline">Discover</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#faqs" class="hover:underline">FAQs</a></li>
+        <li><a href="#contact" class="hover:underline">Contact Us</a></li>
+      </ul>
+      <div class="flex items-center gap-6">
+        <a href="#login" class="text-[#432361] hover:underline font-[Gilroy-Bold]">Login</a>
+        <button
+          class="px-6 py-2 bg-[#432361] text-white font-[Gilroy-SemiBold] rounded-lg"
+        >
+          Sign Up
+        </button>
+      </div>
+    </nav>
   
-  <!-- Footer Section -->
-  <footer class="bg-[#432361] text-white">
-    <div class="container flex items-start justify-between w-[1440px] h-[343px]">
-      <!-- Logo and Description -->
-      <div class="flex flex-col w-[340px] h-[94px] ml-[64px] mt-[56px]">
-        <h2 class="mb-3 text-[32px] leading-[37.5px] font-[Gilroy-Bold] w-[170px] h-[40px]">rendezvous</h2>
-        <p class="text-[16px] leading-[18.75px] font-[Gilroy-Regular] w-[332px] h-[38px]">
-          Your Personal Event Sherpa: Curating Awesome, One Click at a Time.
-        </p>
-      </div>
-      
-      <div class="flex items-start justify-center w-[622px] h-[167px] mt-[56px] gap-[84px]">
-      <!-- Feature Section -->
-      <div class="flex flex-col w-[123px] h-[95px] gap-[18px]">
-        <h3 class="w-[73px] h-[25px] text-[20px] leading-[23.44px] font-[Gilroy-Bold]">Feature</h3>
-        <ul class="w-[123px] h-[52px] gap-[12px]">
-          <li><a href="#events-discovery" class="w-[123px] h-[20px] text-[16px] leading-[18.75px] font-[Gilroy-SemiBold]">Events Discovery</a></li>
-          <li><a href="#ticketing" class="w-[67px] h-[20px] text-[16px] leading-[18.75px] font-[Gilroy-SemiBold]">Ticketing</a></li>
-        </ul>
-      </div>
-      <!-- Company Section -->
-      <div class="flex flex-col w-[91px] h-[159px] gap-[18px]">
-        <h3 class="w-[91px] h-[25px] text-[20px] leading-[23.44px] font-[Gilroy-Bold]">Company</h3>
-        <ul class="w-[66px] h-[116px] gap-[12px] font-[Gilroy-SemiBold]">
-          <li><a href="#about-us" class="w-[66px] h-[20px] text-[16px] leading-[18.75px]">About Us</a></li>
-          <li><a href="#faqs" class="w-[38px] h-[20px] text-[16px] leading-[18.75px]">FAQs</a></li>
-          <li><a href="#careers" class="w-[58px] h-[20px] text-[16px] leading-[18.75px]">Careers</a></li>
-          <li><a href="#support" class="w-[60px] h-[20px] text-[16px] leading-[18.75px]">Support</a></li>
-        </ul>
-      </div>
-      <!-- Contact Us Section -->
-      <div class="w-[240px] h-[124px] gap-[12px] flex flex-col text-white">
-        <h3 class="w-[102px] h-[25px] text-[20px] leading-[23.44px] font-[Gilroy-Bold]">
-          Contact Us
-        </h3>
-        <ul class="w-full h-auto flex flex-col gap-[12px] font-[Gilroy-SemiBold]">
-          <li class="w-auto h-[20px] text-[16px] leading-[18.75px]">
-            siredave1@gmail.com
-          </li>
-          <li class="w-auto h-[20px] text-[16px] leading-[18.75px]">
-            +2348164707958
-          </li>
-          <li class="w-auto h-auto text-[16px] leading-[18.75px]">
-            Race Course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos Island
-            102273, Lagos.
-          </li>
-        </ul>
-      </div>
-      
-      </div>
+    <!-- Product Details Section -->
+    <div id="product-detail" class="container mx-auto w-[1312px] pt-10 pb-20">
+      <!-- Add product content here -->
     </div>
-  </footer>
-
+  
+    <!-- Footer Section -->
+    <footer class="bg-[#432361] text-white">
+      <div class="container mx-auto w-[1312px] py-10 flex justify-between">
+        <!-- Logo and Description -->
+        <div>
+          <h2 class="text-[32px] font-[Gilroy-Bold] mb-3">rendezvous</h2>
+          <p class="text-[16px] font-[Gilroy-Regular] max-w-[332px]">
+            Your Personal Event Sherpa: Curating Awesome, One Click at a Time.
+          </p>
+        </div>
+        
+        <!-- Footer Links -->
+        <div class="flex gap-16">
+          <!-- Features -->
+          <div>
+            <h3 class="text-[20px] font-[Gilroy-Bold] mb-3">Feature</h3>
+            <ul class="space-y-2 font-[Gilroy-SemiBold]">
+              <li><a href="#events-discovery" class="hover:underline">Events Discovery</a></li>
+              <li><a href="#ticketing" class="hover:underline">Ticketing</a></li>
+            </ul>
+          </div>
+  
+          <!-- Company -->
+          <div>
+            <h3 class="text-[20px] font-[Gilroy-Bold] mb-3">Company</h3>
+            <ul class="space-y-2 font-[Gilroy-SemiBold]">
+              <li><a href="#about-us" class="hover:underline">About Us</a></li>
+              <li><a href="#faqs" class="hover:underline">FAQs</a></li>
+              <li><a href="#careers" class="hover:underline">Careers</a></li>
+              <li><a href="#support" class="hover:underline">Support</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact Us -->
+          <div>
+            <h3 class="text-[20px] font-[Gilroy-Bold] mb-3">Contact Us</h3>
+            <ul class="space-y-2 font-[Gilroy-SemiBold]">
+              <li>siredave1@gmail.com</li>
+              <li>+2348164707958</li>
+              <li class="max-w-[300px]">
+                Race Course, 8/9 Marina, Onikan, Lagos, Lagos Island, 102273, Lagos.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
   <script src="./js/index.js" defer type="module"></script>
   
   <!-- <script type="module" src="details.js"></script> -->
