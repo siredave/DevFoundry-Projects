@@ -8,78 +8,82 @@
   </head>
   <body class="w-full min-h-screen overflow-x-hidden">
     <!-- Header Section -->
-    <header>
-      <div
-        class="max-w-full h-[640px] bg-[url('images/Rectangle%202.png')] bg-cover bg-center flex flex-col"
+-<!-- Header Section -->
+<header>
+  <div
+    class="w-full h-[640px] bg-[url('images/Rectangle%202.png')] bg-cover bg-center flex flex-col items-center"
+  >
+    <!-- Navigation Section -->
+    <div class="w-full mt-[50px] px-[30px]">
+      <nav
+        class="w-full max-w-[1332px] h-[80px] pt-3 pr-[24px] pb-3 pl-[24px] justify-between flex items-center bg-white bg-opacity-55 backdrop-blur-md rounded-[20px] mx-auto"
       >
-        <div class="max-w-[1440px] mx-auto w-full mt-[50px] px-[30px]">
-          <nav
-            class="w-full max-w-[1332px] h-[80px] pt-3 pr-[24px] pb-3 pl-[24px] justify-between flex items-center bg-white bg-opacity-55 backdrop-blur-md rounded-[20px]"
+        <h2
+          class="w-[170px] h-[40px] font-[Gilroy-Bold] text-[32px] leading-[37.5px] text-[#432361]"
+        >
+          rendezvous
+        </h2>
+        <ul
+          class="text-[#432361] w-[356px] h-[552] p-2 gap-[14px] font-[Gilroy-Bold] text-[16px] flex items-center justify-center"
+        >
+          <li><a href="#discover" class="hover:underline">Discover</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#faqs" class="hover:underline">FAQs</a></li>
+          <li><a href="#contact" class="hover:underline">Contact Us</a></li>
+        </ul>
+        <div
+          class="flex items-center justify-center h-[44px] w-[205px] gap-[24px]"
+        >
+          <h2
+            class="text-[#432361] w-[45px] h-[20px] text-[16px] font-[Gilroy-Bold] leading-[18.75px]"
           >
-            <h2
-              class="w-[170px] h-[40px] font-[Gilroy-Bold] text-[32px] leading-[37.5px] text-[#432361]"
-            >
-              rendezvous
-            </h2>
-            <ul
-              class="text-[#432361] w-[356px] h-[552] p-2 gap-[14px] font-[Gilroy-Bold] text-[16px] flex items-center justify-center"
-            >
-              <li><a href="#discover" class="hover:underline">Discover</a></li>
-              <li><a href="#about" class="hover:underline">About</a></li>
-              <li><a href="#faqs" class="hover:underline">FAQs</a></li>
-              <li><a href="#contact" class="hover:underline">Contact Us</a></li>
-            </ul>
-            <div
-              class="flex items-center justify-center h-[44px] w-[205px] gap-[24px]"
-            >
-              <h2
-                class="text-[#432361] w-[45px] h-[20px] text-[16px] font-[Gilroy-Bold] leading-[18.75px]"
-              >
-                <a href="#login" class="hover:underline">Login</a>
-              </h2>
-              <button
-                class="w-[120px] h-[44px] px-6 py-2 bg-[#432361] text-white font-semibold rounded-lg font-[Gilroy-Semibold]"
-              >
-                Sign Up
-              </button>
-            </div>
-          </nav>
-        </div>
-        <div class="w-full max-w-[1332px] mx-auto flex items-center justify-center mt-[80px] ml-[40px] mr-[30px]">
-          <div class="w-[1440px] h-[640px]">
-            <h1
-              class="w-[531px] h-[160px] text-[32px] leading-[37.5px] font-[Gilroy-Bold] text-[#FFFFFF] absolute top-[428px] left-[64px]"
-            >
-              Ready to Rock? Discover the Hottest Events Here - Your Calendar's
-              New Best Friend!
-            </h1>
-          </div>
-          <div
-            class="flex items-center justify-between w-[660px] h-[100px] rounded-[22px] pr-6 pl-6 bg-white ml-[716px] gap-2"
+            <a href="#login" class="hover:underline">Login</a>
+          </h2>
+          <button
+            class="w-[120px] h-[44px] px-6 py-2 bg-[#432361] text-white font-semibold rounded-lg font-[Gilroy-Semibold]"
           >
-            <input
-              type="text"
-              placeholder="Search for an event"
-              class="w-[280px] h-[51px] font-[Gilroy-Regular] text-[16px] leading-[18.75px]"
-            />
-            <select
-              class="w-[160px] h-[35px] rounded-sm justify-between pt-2 pr-4 pb-2 pl-4"
-            >
-              <option value="Categories">Categories</option>
-            </select>
-            <button
-              class="w-[120px] h-[44px] rounded-[10px] bg-[#783ead] gap-2 pt-3 pr-6 pb-3 pl-6"
-            >
-              <p
-                class="w-[52px] h-[20px] text-white font-[Gilroy-Semibold] leading-[18.75px] text-base"
-              >
-                Search
-              </p>
-            </button>
-          </div>
+            Sign Up
+          </button>
         </div>
+      </nav>
+    </div>
+
+    <!-- Search Section -->
+    <div class="w-full max-w-[1332px] mx-auto flex items-start justify-center mt-[170px] px-[40px] gap-[70px]">
+      <h1
+        class="w-[531px] h-[160px] text-[32px] leading-[37.5px] font-[Gilroy-Bold] text-[#FFFFFF] text-start"
+      >
+        Ready to Rock? Discover the Hottest Events Here - Your Calendar's
+        New Best Friend!
+      </h1>
+      <div
+        class="flex items-center justify-between w-[660px] h-[100px] rounded-[22px] px-6 bg-white gap-2 mt-[40px]"
+      >
+        <input
+          type="text"
+          placeholder="Search for an event"
+          class="w-[280px] h-[51px] font-[Gilroy-Regular] text-[16px] leading-[18.75px]"
+        />
+        <select
+          class="w-[160px] h-[35px] rounded-sm justify-between pt-2 pr-4 pb-2 pl-4"
+        >
+          <option value="Categories">Categories</option>
+        </select>
+        <button
+          class="w-[120px] h-[44px] rounded-[10px] bg-[#783ead] gap-2 pt-3 pr-6 pb-3 pl-6"
+        >
+          <p
+            class="w-[52px] h-[20px] text-white font-[Gilroy-Semibold] leading-[18.75px] text-base"
+          >
+            Search
+          </p>
+        </button>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
+
+
   
     <!-- Trending Events Section -->
     <section class="mt-8">
